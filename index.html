@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamfinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Streamfinder</h1>
+        <p class="subtitle">Find where to watch your favorite movies and TV shows</p>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter movie or TV show title">
+            <button id="searchButton">Search</button>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-button active" data-type="movie">Movies</button>
+            <button class="tab-button" data-type="tv">TV Shows</button>
+        </div>
+        
+        <div id="loading" class="loading-spinner hidden"></div>
+        <div id="searchResults"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
